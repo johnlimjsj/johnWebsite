@@ -1,0 +1,255 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+/*Div IDs*/
+    .headerLeft >*{
+        position: static;
+        top: 0;
+        width: 50%;
+        height: 100px;
+        background-color: #000000;
+        color: #ff9900;
+        float: left;
+        padding: 0px 0px 0px 30px;
+        left: 0px;
+    }
+
+    .headerRight >* {
+        position: absolute;
+        bottom: 0px;
+        width: 50%;
+        height: 100px;
+        background-color: #000000;
+        color: #ff9900;
+        float: left;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        left: 0px;
+    }
+
+    .contain {
+        position: relative;
+        float:left;
+        width: 100%;
+        background-color: red;
+        padding: 0px;
+        text-align: center;
+        vertical-align: bottom;
+
+        /*z-index: -1;*/
+    }
+
+    .aside {
+        position: static;
+        top: 0;
+        background-color: #cc3300;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .footer {
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+    }
+    .background {  
+        width: 100%;
+        height: 800px;
+        background-size: 100% 100%;
+        background-image: url('background/orangeBG.jpg');
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+    }
+
+
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    .clearfix {display: inline-block;}
+
+    /* For mobile phones: */
+    * {
+        box-sizing: border-box;
+    }
+    .row:after {
+        content: "";
+        clear: both;
+        display: block;
+        
+    }
+
+/*RWD for head column */
+    [class*="headcol-"] {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        position: static;
+        top: 0px;
+        background-color: white;
+        color: black;
+        float:left;
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .headcol-m-1 {width: 8.33%;}
+        .headcol-m-2 {width: 16.66%;}
+        .headcol-m-3 {width: 25%;}
+        .headcol-m-4 {width: 33.33%;}
+        .headcol-m-5   {width: 41.66%;}
+        .headcol-m-6 {width: 50%;}
+        .headcol-m-7 {width: 58.33%;}
+        .headcol-m-8 {width: 66.66%;}
+        .headcol-m-9 {width: 75%;}
+        .headcol-m-10 {width: 83.33%;}
+        .headcol-m-11 {width: 91.66%;}
+        .headcol-m-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .headcol-1 {width: 8.33%;}
+        .headcol-2 {width: 16.66%;}
+        .headcol-3 {width: 25%;}
+        .headcol-4 {width: 33.33%;}
+        .headcol-5 {width: 41.66%;}
+        .headcol-6 {width: 50%;}
+        .headcol-7 {width: 58.33%;}
+        .headcol-8 {width: 66.66%;}
+        .headcol-9 {width: 75%;}
+        .headcol-10 {width: 83.33%;}
+        .headcol-11 {width: 91.66%;}
+        .headcol-12 {width: 100%;}
+    }
+
+/* RWD for content columns*/
+    [class*="bcol-"] {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        position: static;
+        top: 0px;
+        background-color: white;
+        color: black;
+        float:left;
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .bcol-m-1 {width: 8.33%;}
+        .bcol-m-2 {width: 16.66%;}
+        .bcol-m-3 {width: 25%;}
+        .bcol-m-4 {width: 33.33%;}
+        .bcol-m-5   {width: 41.66%;}
+        .bcol-m-6 {width: 50%;}
+        .bcol-m-7 {width: 58.33%;}
+        .bcol-m-8 {width: 66.66%;}
+        .bcol-m-9 {width: 75%;}
+        .bcol-m-10 {width: 83.33%;}
+        .bcol-m-11 {width: 91.66%;}
+        .bcol-m-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .bcol-1 {width: 8.33%;}
+        .bcol-2 {width: 16.66%;}
+        .bcol-3 {width: 25%;}
+        .bcol-4 {width: 33.33%;}
+        .bcol-5 {width: 41.66%;}
+        .bcol-6 {width: 50%;}
+        .bcol-7 {width: 58.33%;}
+        .bcol-8 {width: 66.66%;}
+        .bcol-9 {width: 75%;}
+        .bcol-10 {width: 83.33%;}
+        .bcol-11 {width: 91.66%;}
+        .bcol-12 {width: 100%;}
+    }
+
+/*Lists and buttons*/
+    .menu ul {
+        list-style-type: none;
+        margin-top: 20;
+        margin-bottom:0;
+        margin-left:0;
+        margin-right: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .menu li {
+        display: inline;
+        padding: 8px;
+        margin: 0px;
+        background-color :#000000;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .menu li:hover {
+        background-color: #999999;
+    }
+
+/*nav menu*/
+
+.headerRight ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    position:relative;
+
+}
+
+
+
+/*text styles*/
+grey{
+    color: #CCCCCC;
+    font-size: 25px;
+}
+
+h1{
+    padding-top: 0px;
+    padding-bottom:0px;
+}
+
+/* hyperiinks */
+a.menu-link:link, a.menu-link:visited {
+    display: inline-block;
+    width: 150px;
+    
+    padding: 15px 5px 15px 5px;
+    margin: 0px;
+    text-align: center;
+
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color :#000000;
+    color: #ffffff;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+
+
+a.menu-link:hover {
+    background-color: #999999;
+}

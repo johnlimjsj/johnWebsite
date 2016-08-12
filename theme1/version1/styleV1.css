@@ -1,0 +1,306 @@
+*{
+	padding:0 0 0 0;
+	margin: 0 0 0 0 ;
+}
+
+body{
+	background-color:#FFFAF0;
+	color:;
+	font-size:100%;
+	font-family: "Century Gothic", sans-serif;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* all links */
+	a{
+		text-decoration: none;
+		color: #000000;
+
+	}
+
+	a:link, a:visited{
+
+	}
+
+	a:hover, a:active{
+		color:#FF6600;
+
+	}
+
+/* body divisions */
+	.bodyHead{
+		background-color:#ee7600; /*orange*/
+		color:#ee7600 ;
+		width:100%;
+		float:left;
+		margin: 0px 0px 0px 0px;
+		padding: 0 2px 0 2px;
+	}
+
+	.bodyHeadWrap{ /*this wraps the nav bar and the big image and then centralizes it*/
+		margin: 0 auto;
+		padding: 0px 0px 0px 0px;
+		width:75%;
+		clear: both;	
+	}
+
+
+	.bodyWrap{
+		margin: 0 auto;
+		width:75%;
+		clear: both; /*to make sure there are no floating elements on the LHS and RHS */
+	}
+
+	.bodyFooter{
+		background-color:#333333;
+		color:#ee7600 ;
+		width:100%;
+		float:left;
+		margin: 0px 0px 0px 0px;
+		padding: 0 2px 0 2px;
+	}
+
+/* clearFix */
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    .clearfix {display: inline-block;}
+
+/* the main header is currently combined with the image. In the future, I intend to change this into a cool transitioning banner */
+/* main header items */
+	.mainHeader img{
+		width: 30%;
+		height: auto;
+		margin: auto;
+
+	}
+/* main Nav menu bar */
+	.nav-main{
+		background-color: #333333; /*dark grey*/
+		height: auto;
+		border-radius: 5px;
+		width:100%;
+
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.nav-main > ul{
+		list-style: none;
+		margin: 0 auto;
+		text-align:center;
+	}
+
+	.nav-main > ul > li{
+		float: left;
+		display: inline-block;
+	}
+
+	/*navigation menu links */
+		.nav-main a:link, .nav-main a:visited{
+			color: #FFFFFF;
+			display: inline-block;
+			padding: 10px 25px;
+			vertical-align: middle;
+			height: auto;
+			width:auto;
+			margin: 0 0 0 0;
+
+		}
+
+		.nav-main a:hover, .nav-main a:active{
+			color: #ffffff;
+			background-color: #999999;
+
+		}
+
+		.nav-main ul li a{
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+
+/* Nav content menu bar */
+	.nav-Content{
+		position: absolute;
+		top:40px;
+		overflow:hidden;
+		background-color: #ff9900;
+		
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+
+			.nav-Content a:link, .nav-Content a:visited{
+			color: #CCCCCC;
+			padding: 10px 25px;
+			vertical-align: middle;
+			width:100%;
+			height: 27px;
+			margin: 0 0 0 0;
+
+		}
+
+		.nav-Content a:hover, .nav-Content a:active{
+			color: #cccccc;
+			background-color: #999999;
+
+		}
+
+/*	.nav-Content ul{
+		list-style: none;
+		margin: 0 auto;
+	}
+
+	.nav-Content ul li{
+		float: left;
+		display: inline
+	}
+*/
+/* Nav > content > sub bar for styling */
+.nav-sub{
+	padding:0px;
+
+}
+
+.nav-sub ul {
+	padding:0px;
+	margin:0;
+	list-style-type:none;
+}
+
+.nav-sub ul li a{
+	display:inline-block;
+	padding:5px 0px;
+	width:100%;
+	border-radius:0px;
+
+}
+/*navigation content links */
+
+	/*
+	.nav-Content a:link, .nav-Content a:visited{
+		color: #CCCCCC;
+		padding: 10px 25px;
+		vertical-align: middle;
+		height: 27px;
+		margin: 0 0 0 0;
+
+	}
+
+	.nav-Content a:hover, .nav-Content a:active{
+		color: #cccccc;
+		background-color: #999999;
+
+	}
+
+	.nav-Content ul li a{
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	*/
+
+
+
+	/*content*/
+		.mainContent{
+			line-height: 25px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			
+		}
+
+		.content{
+			width:64%;
+			float:left;
+			margin: 0.75% 0.75% 0.75% 0.75%;
+		}
+
+		.topContent{
+			background-color: #ffffff;
+			border-radius: 5px;
+			padding: 2% 2% 2% 2%;			
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+	/*side bar */
+		.SideBar{
+			width:29%;
+			height:auto;
+			float: left;
+			background-color: #ffffff;
+			padding: 2% 2% 2% 2%;
+			margin: 0.75% 0.75% 0.75% 0.75%;
+		}
+
+	/* footer */
+		.mainFooter{
+			background-color: #000000;
+			color: #ff9900;
+			width:100%;
+			padding: 0 5% 0 5%;
+			float:left;
+
+		}
+
+		.mainFooter p{
+			width:92%;
+			margin: 2% auto;
+		}
+
+
+/* responsive web design MEDIA QUERY */
+
+/*mobile version */
+@media only screen and (min-width: 100px) and (max-width: 599px){
+	.bodyHeadWrap{
+		width:100%;
+	}
+
+	.bodyWrap{
+		width:100%;
+	}
+
+	.content{
+		width: 100%;
+		margin: 0 0 0 0;
+	}
+
+	.topSideBar {
+		width:45%;
+
+	}
+
+
+}
+
+/*tablet version */
+@media only screen and (min-width: 600px){
+	.bodyHeadWrap{
+		width:95%;
+	}
+
+	.bodyWrap{
+		width:95%;
+	}
+}
+
+/* desktop version */
+@media only screen and (min-width: 868px){
+	.bodyHeadWrap{
+		width:75%;
+	}
+	.bodyWrap{
+		width:75%;
+	}
+	
+}
+

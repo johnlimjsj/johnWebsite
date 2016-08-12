@@ -1,0 +1,365 @@
+*{
+	padding:0 0 0 0;
+	margin: 0 0 0 0;
+}
+html{
+	width:100%;
+}
+
+body{
+	background-color:#FFFAF0; /*light beige*/
+	color:;
+	font-size:100%;
+	font-family: "Century Gothic", sans-serif;
+	text-align: left;
+}
+
+/* all links */
+	a{	text-decoration: none;
+		color: #000000;
+	}
+	a:link, a:visited{	}
+
+	a:hover, a:active{
+		color:#FF6600;
+	}
+
+/* body divisions */
+
+	.topHeader{
+		height:7vw;
+		width:100%;
+		background-color:#ffffff;
+		padding:2% 0%;
+		
+	}
+
+	#logo{
+		float:left;
+		height:100%;
+		width:30vw;
+		display:block;
+		padding:0% 0%;
+		margin: 0% 4%;	
+	}
+
+	#menu{
+		float:right;
+		height:100%;
+		width:8vw;
+		display:none;
+		margin: 0% 3%;		
+	}
+
+	.show{
+		display:block;
+	}
+
+
+	.bodyHead{
+		background-color:#ee7600; /*orange*/
+		color:#ee7600 ;
+		width:100%;
+		float:left;
+
+	}
+
+	.bodyHeadWrap{ /*this wraps the nav bar and the big image and then centralizes it*/
+		margin: 0 auto;
+		
+		width:75%;
+		clear: both;	
+	}
+
+
+	.bodyWrap{
+		margin: 0 auto;
+		width:75%;
+		clear: both; /*to make sure there are no floating elements on the LHS and RHS */
+	}
+
+	.bodyFooter{
+		background-color:#333333;
+		color:#ee7600 ;
+		width:100%;
+		float:left;
+	}
+
+/* clearFix */
+    .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    .clearfix {display: block;}
+
+/* the main header is currently combined with the image. In the future, I intend to change this into a cool transitioning banner */
+/* main header items */
+
+/* main Nav menu bar */
+	.nav-main{
+		background-color: #333333; /*dark grey*/
+		height: auto;
+		border-radius: 5px;
+		width:100%;
+		z-index:999;
+
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	.nav-main ul{
+		list-style: none;
+		margin: 0 auto;
+		text-align:center;
+		z-index:999;
+	}
+
+	.nav-main > ul > li{
+		/*float: left;*/
+		display: inline-block;
+		z-index:999;
+		width:19.5%; 
+		border-bottom:1px solid;
+		border-bottom-color:#666666;
+		
+	}
+
+	.nav-main li{
+		position:relative;
+	}
+
+	/*navigation menu links */
+		.nav-main a:link, .nav-main a:visited{
+			color: #FFFFFF;
+			display: inline-block;
+			padding: 10px 0px;
+			vertical-align: middle;
+			height: auto;
+			width:100%;
+			margin: 0 0 0 0;
+
+		}
+
+		.nav-main a:hover{
+			background-color: #999999;
+
+		}
+
+		.nav-main > ul > li:hover >a {
+			background-color: #666666;
+		}
+
+
+
+
+
+
+		.nav-main ul li a{
+			-moz-border-radius: 0px;
+			-webkit-border-radius: 0px;
+		}
+	.nav-main ul li span:after{
+		color:white;
+		border: 0.43em solid transparent; /* 5 */
+		border-bottom: none;
+		border-top-color: #ff9900;
+		content: ' ';
+		vertical-align: middle;
+		display: inline-block;
+		position: relative;
+		right: -0.313em; /* 5 */
+	}
+
+/*drop down menu*/
+	.nav-main ul ul{
+		position:absolute;
+		width:100%;
+		display:none;
+		z-index:999;
+
+	}
+	.nav-main ul ul li a{
+		display:block;
+		background-color:#666666;
+		border-top: 1px solid;
+		border-top-color:#999999;
+	}
+
+/*image slider*/
+	.cycle-slideshow {
+		height:45vw; /*to maintain aspect ratio */
+		width:100%;
+		display:block;
+		position:relative;
+	}
+	.cycle-slideshow > img{
+		width:100%;
+		height:100%;
+		display:block;		
+		padding:0 0 0 0;
+
+	}
+
+	.cycle-prev, .cycle-next{
+		width:50px;
+		height:50px;
+		top:40%;
+		z-index:999;
+		text-align:center;
+		display:block;
+		color:white;
+		position:absolute;
+		cursor:pointer;
+		font-size:250%;
+		font-family:century;
+
+	}
+	.cycle-prev{
+		left:5%;
+	}
+	.cycle-next{
+		right:5%;
+	}
+	/*thumbnails*/
+	.cycle-pager {
+		width:100%;
+		display:block;
+		position:absolute;
+		bottom:0%;
+		z-index:999;
+		cursor:pointer;
+		text-align:center;		
+	}
+
+	.cycle-pager a{
+		display:inline-block;
+		margin:0 3px;
+		opacity:0.5;
+		border:2px solid rgba(255,255,255,0.3);
+
+	}
+
+	.cycle-pager .thumb, .cycle-pager img {
+		width:15%;
+		height:8vw;
+		
+	}
+
+	.cycle-pager img {
+		width:100%;
+		height:100%;
+		
+	}
+
+	.cycle-pager .cycle-pager-active{
+		opacity:1;
+		border:2px solid rgba(255,255,255,0.7);
+	}
+
+	.thumb{
+		display:inline-block;
+	}
+
+	/*content*/
+		.mainContent{
+			line-height: 25px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			
+		}
+
+		.content{
+			width:64%;
+			float:left;
+			margin: 0.75% 0.75% 0.75% 0.75%;
+		}
+
+		.topContent{
+			background-color: #ffffff;
+			border-radius: 5px;
+			padding: 2% 2% 2% 2%;			
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+	/*side bar */
+		.SideBar{
+			width:29%;
+			height:auto;
+			float: left;
+			background-color: #ffffff;
+			padding: 2% 2% 2% 2%;
+			margin: 0.75% 0.75% 0.75% 0.75%;
+		}
+
+	/* footer */
+		.mainFooter{
+			background-color: #000000;
+			color: #ff9900;
+			width:100%;
+			padding: 0 5% 0 5%;
+			float:left;
+
+		}
+
+		.mainFooter p{
+			width:92%;
+			margin: 2% auto;
+		}
+
+
+/* responsive web design ---------MEDIA QUERY------ */
+
+/*mobile version */
+@media only screen and (min-width: 100px) and (max-width: 599px){
+	.bodyHeadWrap{width:100%;	}
+	.bodyWrap{width:100%;}
+	.content{width: 100%;	margin: 0 0 0 0;}
+	.topSideBar {width:45%;	}
+	.cycle-slideshow {height:50vw; /*to maintain aspect ratio */}
+	
+	.nav-main {display:none;}
+	.nav-main > ul > li{display:block;	z-index:999;	width:auto;}
+	/*dropdown*/
+	.nav-main ul ul {position:relative;	}
+
+	#menu{display:block; cursor:pointer;}
+
+
+
+
+
+}
+
+/*tablet version */
+@media only screen and (min-width: 600px){
+	.bodyHeadWrap{
+		width:95%;
+	}
+
+	.bodyWrap{
+		width:95%;
+	}
+	.cycle-slideshow {
+		height:55vw; /*to maintain aspect ratio */
+	}
+
+
+}
+
+/* desktop version */
+@media only screen and (min-width: 868px){
+	.bodyHeadWrap{
+		width:75%;
+	}
+	.bodyWrap{
+		width:75%;
+	}
+	
+}
+
