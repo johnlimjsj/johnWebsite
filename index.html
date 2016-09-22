@@ -1,137 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>John's website</title>
+	<title> Home Page </title>
+	<link rel = "stylesheet" href = "styleV4.css" type="text/css" />
+	<link rel="icon" href="webIcon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="jquery.blueberry.js"></script>
+-->
+
 </head>
-
-<link type="text/css" rel="stylesheet" href="style1.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <body>
+	<div class ="topHeader">
+		<img id="logo" src="johnLogo.png">
+		<img id = "menu" src ="menu2.png">
 
-<header>
+	</div>
+	<div class="bodyHead"> <!--this is the big orange expanse at the top half-->
+		<div class="bodyHeadWrap"> <!-- this is the invisible div that keeps everything in the middle of the page -->
+			<header class="mainHeader"> 
+				<!-- Menu -->
+				<nav class="nav-main clearfix"> <!-- refers to the dark grey nav menu bar -->
+					<ul>
+						<li>
+						<a href="#">Home</a></li><li>
+						<a href="#">My Portfolio</a></li><li>
+						<a href="travelsV4.html"><span>My Travels</span></a>
+							<ul>
+								<li><a href="#">USA</a></li>
+								<li><a href="#">South East Asia</a></li>
+								<li><a href="#">South East Asia</a></li>
+								<li><a href="#">South East Asia</a></li>
+							</ul>
+						</li><li>
+						<a href="#">About Me</a></li><li>
+						<a href="#">Contact</a></li>
+					</ul>	
+				</nav>
+				<!--jQuuery for te nav menu -->
+	<!-- jquery library -->
+		<script type="text/javascript" src = "jquery-1.11.3.min.js"></script>
+	<!-- my own jquery -->
+		<script type="text/javascript" src = "navMenuV4.js"></script>
+	<!-- modernizr library -->
+		<script type="text/javascript" src = "modernizr.custom.20382.js"></script>		
 
-	
-	<header_1>John's Portfolio </header_1>
-</header>
+	<!--image slider -->
+				<div class ="cycle-slideshow" data-cycle-pager-template="<a class = 'thumb' href='#'><img src='{{src}}'></a>">
+					<div class = "cycle-pager"></div>
+					<div class = "cycle-prev">&#9001;</div>
+					<div class = "cycle-next">&#9002;</div>
+
+					<img src="sliderIMG/johnBanner.jpg">
+					<img src="sliderIMG/monkey_logo.jpg">
+					<img src="sliderIMG/painting.jpg">
+					<img src="sliderIMG/wedding.jpg">
+				</div>
+		<script type="text/javascript" src = "jquery.cycle2.min.js"></script>
+		<script type="text/javascript" src = "doubletaptogo.js"></script>
+		<script>
+			$( function()
+			{
+				$( '.nav-main li:has(ul)' ).doubleTapToGo(); 
+			});
+		</script>
+
+			</header>
+		</div> <!-- class=bodyHeadWrap-->
+	</div> <!-- class=bodyHead-->
+		
 
 
-<centuryGothic>
-<topRow>
-<nav>
-</nav>	
-	<ul id="menu">
-  		<li><a href="/html/default.asp" title="Includes what I have done in JC and university">Portfolio</a></li>
-  		<li><a href="pictures.html" title=>Pictures</a></li>
-  		<li><a href="/js/default.asp">Contact</a></li>
-  	</ul>  
 
+<!-- Divisions for main content -->
+	</body>
+	<div class="bodyWrap">
+		<div class = "mainContent">
+			<div class="content">
+				<article class="topContent">
+					<header>
+						<h2><a href="#"> Link </a></h2>
+					</header>
 
+					<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+					    <tr valign="top">
+					      <th>Tests</th> <td> test1 </td> <td> test2 </td>
+					   </tr>
+					   <tr valign="top" class="Failure">
+					     <th>Hi</th> <td> hi1 </td> <td> hi2 </td>
+					  </tr>
+					</table>
 
+					<footer>
+						<p class="postInfo">Some description about the main title</p>
+					</footer>
+						<content>
+							<p>Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi.</p>
+						</content>
+				</article> <!-- class = "topcontent"-->
+			</div> <!-- class="content" -->
+		</div> <!-- class="mainContent" -->
 
-</topRow>
-</centuryGothic>
+		<aside class="SideBar">
+			<article>
+				<content>
+					<h2>Top Side Bar</h2>
+					<p> some paragraph information. Type some random text 
+						over here to fill up the space haha.
 
-<section>
-	<!-- <img src = "images/johnBanner.jpg" alt="John Banner" width="1000" height="700"> -->
-	<p id="backtotop">Top</p>
-	<img src = "images/johnBanner.jpg" alt="John Banner" style="float:riight; width:100; height:70;">	
-	<p>	
-	Hello this is me on the right. I was once featured on 
-	Brightsparks in 2015 February issue for my active involvement
-	</p>
-
-	<blockquote cite="http://www.worldwildlife.org/who/index.html">
-	Look not every man on his own things, 
-	but every man also on the things of others
-	</blockquote>
-
-	<p> <abbr title="Philippians">Phil</abbr> 2:4</p>
-
-	<address>
-	Written by Jon Doe.<br>
-	Visit us at:<br>
-	Example.com<br>
-	Box 564, Disneyland<br>
-	USA
-
-	Written by Jon Doe.<br>
-	Visit us at:<br>
-	Example.com<br>
-	Box 564, Disneyland<br>
-	USA
-
-	Written by Jon Doe.<br>
-	Visit us at:<br>
-	Example.com<br>
-	Box 564, Disneyland<br>
-	USA
-
-	Written by Jon Doe.<br>
-	Visit us at:<br>
-	Example.com<br>
-	Box 564, Disneyland<br>
-	USA
-	</address>
-	
-	<a href = "#backtotop">Back to top</a>
-</section>
-
-<table id="customers">
-  <tr class="odd">
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr class= "odd">
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr class="even">
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr class="odd">
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr class="even">
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr class="odd">
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr class="even">
-    <td>Königlich Essen</td>
-    <td>Philip Cramer</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr class="alt">
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>Simon Crowther</td>
-    <td>UK</td>
-  </tr>
-  <tr class="alt">
-    <td>Paris spécialités</td>
-    <td>Marie Bertrand</td>
-    <td>France</td>
-  </tr>
-</table>
+					</p>
+				</content>
+			</article>
+		</aside> <!--class="topSideBar"-->
+	</div> <!-- class="bodyWrap"-->
 </body>
+	<div class="bodyFooter">		
+			<p> copy right by John </p>
+	</div><!-- class="bodyFooter"-->
+
+
+</html>
