@@ -96,6 +96,14 @@
 						<p class="postInfo">Some description about the main title</p>
 					</footer>
 						<content>
+							<?php 
+								foreach($_REQUEST as $key => $value){
+									if($key=="sensor"){
+										$sensor = $value;
+										echo "got sensor";
+									}
+								}
+							?>
 							<p>Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi.</p>
 						</content>
 				</article> <!-- class = "topcontent"-->
