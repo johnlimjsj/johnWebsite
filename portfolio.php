@@ -24,8 +24,8 @@
 				<nav class="nav-main clearfix"> <!-- refers to the dark grey nav menu bar -->
 					<ul>
 						<li>
-						<a href="index.php">Home h1</a></li><li>
-						<a href="#">My Portfolio</a></li><li>
+						<a href="index.html">Home h1</a></li><li>
+						<a href="portfolio.php">My Portfolio</a></li><li>
 						<a href="travelsV4.html"><span>My Travels</span></a>
 							<ul>
 								<li><a href="#">USA</a></li>
