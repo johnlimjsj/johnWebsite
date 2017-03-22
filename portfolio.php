@@ -25,7 +25,7 @@
 					<ul>
 						<li>
 						<a href="index.php">Home h1</a></li><li>
-						<a href="portfolio.php">My Portfolio</a></li><li>
+						<a href="#">My Portfolio</a></li><li>
 						<a href="travelsV4.html"><span>My Travels</span></a>
 							<ul>
 								<li><a href="#">USA</a></li>
@@ -104,7 +104,7 @@
 									}
 								}
 							?>
-							<p>Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Fill in some wall of text. . type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi. Some description about the main title. type alot alot of stuff. hi.</p>
+							<p>Portfolio page</p>
 						</content>
 				</article> <!-- class = "topcontent"-->
 			</div> <!-- class="content" -->
