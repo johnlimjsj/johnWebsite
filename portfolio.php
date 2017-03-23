@@ -47,16 +47,7 @@
 		<script type="text/javascript" src = "modernizr.custom.20382.js"></script>		
 
 	<!--image slider -->
-				<div class ="cycle-slideshow" data-cycle-pager-template="<a class = 'thumb' href='#'><img src='{{src}}'></a>">
-					<div class = "cycle-pager"></div>
-					<div class = "cycle-prev">&#9001;</div>
-					<div class = "cycle-next">&#9002;</div>
-
-					<img src="sliderIMG/johnBanner.jpg">
-					<img src="sliderIMG/monkey_logo.jpg">
-					<img src="sliderIMG/painting.jpg">
-					<img src="sliderIMG/wedding.jpg">
-				</div>
+				
 		<script type="text/javascript" src = "jquery.cycle2.min.js"></script>
 		<script type="text/javascript" src = "doubletaptogo.js"></script>
 		<script>
