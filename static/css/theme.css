@@ -73,7 +73,7 @@ body{
 
 	.bodyWrap{
 		margin: 0 auto;
-		width:75%;
+		width:100%;
 		clear: both; /*to make sure there are no floating elements on the LHS and RHS */
 	}
 
@@ -193,7 +193,7 @@ body{
 
 /*image slider*/
 	.cycle-slideshow {
-		height:35vw; /*to maintain aspect ratio */
+		height:30vw; /*to maintain aspect ratio */
 		width:100%;
 		display:block;
 		position:relative;
@@ -276,7 +276,7 @@ body{
 		}
 
 		.content{
-			width:64%;
+			width:100%;
 			float:left;
 			margin: 0.75% 0.75% 0.75% 0.75%;
 		}
