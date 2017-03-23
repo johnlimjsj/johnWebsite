@@ -1,5 +1,1 @@
-{
-	"light":"off", 
-	"pump":"on",
-	"fan":"off"
-}
+{"light":"on","pump":"off","fan":"on"}

@@ -1,15 +1,32 @@
+<?php
+$settingButtons = array
+(
+	"light"=>"on",
+	"pump"=>"on",
+	"fan"=>"on"
+);
 
+foreach($settingButtons as $key => $val){
+	$val = $_GET[$key];
+	if($val!="")
+		$settingButtons[$key]=$val;
+}
+$file = fopen("light.json", "w") or die("can't open file");
+
+$jsonSettings = json_encode($settingButtons);
+echo $jsonFormat;
+fwrite($file, $jsonSettings);
+fclose($file);
+
+?>
 <html>
 
 <head>
 	<title> Home Page </title>
-	<link rel = "stylesheet" href = "styleV4.css" type="text/css" />
+	<link rel = "stylesheet" href = "css/bootstrap.min.css" type="text/css" />
+	<link rel = "stylesheet" href = "css/theme.css" type="text/css" />
 	<link rel="icon" href="webIcon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script src="jquery.blueberry.js"></script>
--->
-
 </head>
 <body>
 	<div class ="topHeader">
@@ -38,24 +55,7 @@
 						<a href="#">Contact</a></li>
 					</ul>	
 				</nav>
-				<!--jQuuery for te nav menu -->
-	<!-- jquery library -->
-		<script type="text/javascript" src = "jquery-1.11.3.min.js"></script>
-	<!-- my own jquery -->
-		<script type="text/javascript" src = "navMenuV4.js"></script>
-	<!-- modernizr library -->
-		<script type="text/javascript" src = "modernizr.custom.20382.js"></script>		
 
-	<!--image slider -->
-				
-		<script type="text/javascript" src = "jquery.cycle2.min.js"></script>
-		<script type="text/javascript" src = "doubletaptogo.js"></script>
-		<script>
-			$( function()
-			{
-				$( '.nav-main li:has(ul)' ).doubleTapToGo(); 
-			});
-		</script>
 
 			</header>
 		</div> <!-- class=bodyHeadWrap-->
@@ -70,36 +70,16 @@
 		<div class = "mainContent">
 			<div class="content">
 				<article class="topContent">
-					<header>
-						<h2><a href="#"> Link </a></h2>
-					</header>
+					<content>
 
-					<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
-					    <tr valign="top">
-					      <th>Tests</th> <td> test1 </td> <td> test2 </td>
-					   </tr>
-					   <tr valign="top" class="Failure">
-					     <th>Hi</th> <td> hi1 </td> <td> hi2 </td>
-					  </tr>
-					</table>
-
-					<footer>
-						<p class="postInfo">Some description about the main title</p>
-					</footer>
-						<content>
-							<?php 
-								// foreach($_REQUEST as $key => $value){
-								// 	if($key=="sensor"){
-								// 		$sensor = $value;
-								// 		echo "got sensor";
-								// 	}
-								// }
-								$val = $_GET['sensor'];
-								if($val == 'water')
-									echo "got water val";
-							?>
-							<p>Portfolio page</p>
-						</content>
+						<?php 
+							foreach($settingButtons as $key => $val){
+								echo "<a href='?$key=on' class='btn btn-primary turnon' id='$key'> Turn On $key </a>";
+								echo "<a href='?$key=off' class='btn btn-primary turnoff' id='$key'> Turn Off $key </a>";
+								echo "</br></br>";
+							}
+						?>
+					</content>
 				</article> <!-- class = "topcontent"-->
 			</div> <!-- class="content" -->
 		</div> <!-- class="mainContent" -->
@@ -116,10 +96,23 @@
 			</article>
 		</aside> <!--class="topSideBar"-->
 	</div> <!-- class="bodyWrap"-->
-</body>
+	</body>
 	<div class="bodyFooter">		
 			<p> copy right by John </p>
 	</div><!-- class="bodyFooter"-->
-
-
+	
+	<script type="text/javascript" src = "js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src = "js/navMenuV4.js"></script>
+	<script type="text/javascript" src = "js/modernizr.custom.20382.js"></script>					
+	<script type="text/javascript" src = "js/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src = "js/doubletaptogo.js"></script>
+	<script>
+		$( function()
+		{
+			$( '.nav-main li:has(ul)' ).doubleTapToGo(); 
+		});
+	</script>
 </html>
+
+
+

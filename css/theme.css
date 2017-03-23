@@ -8,7 +8,6 @@ html{
 
 body{
 	background-color:#FFFAF0; /*light beige*/
-	color:;
 	font-size:100%;
 	font-family: "Century Gothic", sans-serif;
 	text-align: left;
@@ -27,7 +26,7 @@ body{
 /* body divisions */
 
 	.topHeader{
-		height:7vw;
+		height:11vw;
 		width:100%;
 		background-color:#ffffff;
 		padding:2% 0%;
@@ -139,7 +138,9 @@ body{
 			display: inline-block;
 			padding: 10px 0px;
 			vertical-align: middle;
+			text-decoration: none;
 			height: auto;
+			font-size:16px;
 			width:100%;
 			margin: 0 0 0 0;
 
