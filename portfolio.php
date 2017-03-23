@@ -97,12 +97,15 @@
 					</footer>
 						<content>
 							<?php 
-								foreach($_REQUEST as $key => $value){
-									if($key=="sensor"){
-										$sensor = $value;
-										echo "got sensor";
-									}
-								}
+								// foreach($_REQUEST as $key => $value){
+								// 	if($key=="sensor"){
+								// 		$sensor = $value;
+								// 		echo "got sensor";
+								// 	}
+								// }
+								$val = $_GET['sensor'];
+								if($val == 'water')
+									echo "got water val";
 							?>
 							<p>Portfolio page</p>
 						</content>
